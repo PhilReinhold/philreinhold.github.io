@@ -1,6 +1,6 @@
 html,body {
-  height: 100%;
-  width: 1100px;
+  /*height: 100%;
+  width: 1100px;*/
   background-color: #F5F6F8;
   margin: 0;
 }
@@ -36,7 +36,7 @@ html,body {
 
 #content{
   float: left;
-  padding-left: 50px;
+  padding-left: 250px;
   width: 800px;
 
   font-family: 'Roboto', sans-serif;
@@ -54,4 +54,24 @@ html,body {
 code {
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
+}
+pre {
+  color: #f8f8f2;
+  background-color: #171717;
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative
+}
+body{
+    height:100% /* force the BODY element to match the height of the HTML element */
+}
+
+#navbar{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    overflow:hidden;
 }
