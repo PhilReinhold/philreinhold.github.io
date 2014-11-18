@@ -113,15 +113,17 @@ ln -s code/dotfiles/zshrc .zshrc
 ln -s code/dotfiles/tmux.conf .tmux.conf
 {% endhighlight %}
 
-Tell vim to install packages
+Tell vim to install packages from [vundle](http://github.com/gmarik/vundle.vim)
 
 {% highlight bash %}
+mkdir -p .vim/bundle
+git clone gmarik/Vundle.vim .vim/bundle
 vim +BundleInstall +q
 {% endhighlight %}
 
-Set up shell
+Set up shell with [antigen](http://github.com/zsh-users/antigen)
 
 {% highlight bash %}
-echo "Name Me!"
-sudo chsh /bin/zsh
+git clone zsh-users/antigen .antigen
+sudo chsh -s /bin/zsh phil
 {% endhighlight %}
