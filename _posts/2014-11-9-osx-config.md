@@ -60,6 +60,7 @@ apps=(
     mactex
     latexit
     papers
+    steam
 )
 brew cask install --appdir="/Applications" ${packages[@]}
 {% endhighlight %}
