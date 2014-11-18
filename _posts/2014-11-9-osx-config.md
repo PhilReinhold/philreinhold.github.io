@@ -102,7 +102,8 @@ git clone PhilReinhold/vectfit_python
 cd ~
 {% endhighlight %}
 
-Link dotfiles to the appropriate locations
+Link [dotfiles](https://github.com/PhilReinhold/dotfiles) to the appropriate
+locations
 
 {% highlight bash %}
 rm .gitconfig
@@ -127,3 +128,28 @@ Set up shell with [antigen](http://github.com/zsh-users/antigen)
 git clone zsh-users/antigen .antigen
 sudo chsh -s /bin/zsh phil
 {% endhighlight %}
+
+
+Not everything is automatable (yet)
+-----------------------------------
+
+### Google Drive
+I like google drive. It is the most competitively-priced dropbox-style service
+around. I don't like how it names its directory `~/Google Drive`, since it is a
+pain to type on the command line. To fix this, after setting up google drive and
+syncing, close the app and run `mv ~/Google Drive ~/gdrive`. Reboot the app and
+click the error, selecting 'Locate folder'.
+
+### BetterTouchTool
+[BetterTouchTool](http://www.boastr.net) makes trackpad multitouch a powerful
+tool. Unfortunately, it uses a binary file for configuration, which makes it
+unweildy to version control. Here are some bindings I like.
+
+ - Global Bindings
+   - Three Finger Click: Middle Click
+   - Four Finger Click: Close Tab/Window (cmd-w)
+   - Five Finger Click: Quit Application (cmd-q)
+   - Three Finger Swipe Up: Maximize Window
+   - Three Finger Swipe Down: Minimize Window Below Cursor
+   - Tap Sequence (1234): Show BTT Preferences
+   - Rotate Left/Right: Previous/Next Tab (cmd-{/cmd-})
