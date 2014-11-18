@@ -10,6 +10,7 @@ Then, get the command line tools
 
 {% highlight bash %}
 xcode-select --install
+xcodebuild -license
 {% endhighlight %}
 
 Install [homebrew](http://brew.sh)
@@ -22,9 +23,10 @@ Install some packages from homebrew
 
 {% highlight bash %}
 brew update
+brew tap homebrew/science
 packages=(
     git
-    brew-cask
+    cask
     hub
     ack
     tree
