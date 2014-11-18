@@ -26,7 +26,6 @@ brew update
 brew tap homebrew/science
 packages=(
     git
-    cask
     hub
     ack
     tree
@@ -47,6 +46,7 @@ brew cleanup
 Install some apps from [brew cask](http://caskroom.io)
 
 {% highlight bash %}
+brew install caskroom/cask/brew-cask
 apps=(
     google-chrome
     google-drive
@@ -67,7 +67,8 @@ brew cask install --appdir="/Applications" ${packages[@]}
 Install python packages with [pip](https://pip.readthedocs.org)
 
 {% highlight bash %}
-easy_install pip
+pip install --upgrade setuptools
+pip install --upgrade pip
 pypackages=(
     numpy
     scipy
